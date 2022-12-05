@@ -1,18 +1,15 @@
-import {useState} from "react";
-import {classNames} from "shared/lib/classNames/classNames";
+import {Link} from "react-router-dom";
+import {AppRouter} from "app/providers/AppRouter";
+import {RoutePath} from "shared/config/routeConfig/routeConfig";
+
+
+
 
 const App = () => {
-   const [count, setCount] = useState(0);
-
-   const increment = () => {
-      setCount(count + 1);
-   }
-
-   const decrement = () => {
-      setCount(count - 1);
-   }
    return (
       <div className={'app'}>
+         <Link to={RoutePath.main} >Main Page</Link>
+        <AppRouter/>
       </div>
    );
 };

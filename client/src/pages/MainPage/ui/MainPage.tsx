@@ -8,7 +8,7 @@ interface MainPageProps {
 const MainPage = ({className}: MainPageProps) => {
     return (
         <div className={classNames(cls.MainPage, {}, [className])}>
-
+            Main Page
         </div>
     );
 };
