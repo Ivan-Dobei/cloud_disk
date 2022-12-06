@@ -1,6 +1,6 @@
-import {RouteProps} from "react-router-dom";
-import {MainPage} from "pages/MainPage";
-import {NotFoundPage} from "pages/NotFoundPage";
+import {RouteProps} from 'react-router-dom';
+import {MainPage} from 'pages/MainPage';
+import {NotFoundPage} from 'pages/NotFoundPage';
 
 export enum RouteNames {
    MAIN = 'main',
@@ -12,7 +12,7 @@ export const RoutePath: Record<RouteNames, string> = {
    [RouteNames.MAIN]: '/main',
    // not found page last
    [RouteNames.NOT_FOUND]: '*',
-}
+};
 
 export const routeConfig: Record<RouteNames, RouteProps> = {
    [RouteNames.MAIN]: {
@@ -22,6 +22,6 @@ export const routeConfig: Record<RouteNames, RouteProps> = {
    // not found page last
    [RouteNames.NOT_FOUND]: {
       path: RoutePath.not_found,
-      element: <NotFoundPage/>
+      element: <NotFoundPage/>,
    },
-}
+};

@@ -1,7 +1,6 @@
-import {Link} from "react-router-dom";
-import {AppRouter} from "app/providers/AppRouter";
-import {RoutePath} from "shared/config/routeConfig/routeConfig";
-import {useTheme} from "app/providers/ThemeProvider";
+import {AppRouter} from 'app/providers/AppRouter';
+import {useTheme} from 'app/providers/ThemeProvider';
+import {NavBar} from 'widgets/NavBar/ui/NavBar';
 
 
 
@@ -10,9 +9,8 @@ const App = () => {
 
    return (
       <div className={`app ${theme}`}>
-         <Link to={RoutePath.main} >Main Page</Link>
-         <button onClick={toggleTheme}>toggle</button>
-        <AppRouter/>
+         <NavBar/>
+         <AppRouter/>
       </div>
    );
 };

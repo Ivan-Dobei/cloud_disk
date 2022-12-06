@@ -1,0 +1,14 @@
+{
+   "extends": [
+      "stylelint-config-standard-scss",
+      "stylelint-config-clean-order"
+   ],
+   "plugins": ["stylelint-order"],
+   "rules": {
+      "color-hex-length": "long",
+      "declaration-block-trailing-semicolon": "always",
+      "order/order": ["custom-properties", "declarations"],
+      "indentation": [3],
+      "selector-class-pattern": null
+   }
+}
