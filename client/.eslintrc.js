@@ -6,22 +6,17 @@ module.exports = {
    },
    'extends': [
       'eslint:recommended',
-      'plugin:react/recommended',
+      'plugin:react/recommended', '' +
       'plugin:@typescript-eslint/recommended',
+      'plugin:storybook/recommended',
    ],
-   'overrides': [
-   ],
+   'overrides': [],
    'parser': '@typescript-eslint/parser',
    'parserOptions': {
       'ecmaVersion': 'latest',
       'sourceType': 'module',
    },
-   'plugins': [
-      'react',
-      '@typescript-eslint',
-      'react-hooks',
-      'import',
-   ],
+   'plugins': ['react', '@typescript-eslint', 'react-hooks', 'import'],
    'rules': {
       'no-console': 'warn',
       'prefer-const': 'error',
@@ -30,13 +25,18 @@ module.exports = {
       'indent': ['warn', 3],
       'react/jsx-indent': ['warn', 3],
       'react/react-in-jsx-scope': 'off',
-      'max-len': ['error', {'code': 120, 'ignoreComments': true}],
+      'max-len': ['error', {
+         'code': 120,
+         'ignoreComments': true,
+      }],
       'comma-dangle': ['error', 'always-multiline'],
       'semi': ['warn', 'always'],
       'no-undef': 'off',
       'react/display-name': 'off',
       '@typescript-eslint/no-var-requires': 'off',
-      'no-use-before-define': ['error', { 'variables': false }],
+      'no-use-before-define': ['error', {
+         'variables': false,
+      }],
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'error',
       'import/order': ['error', {

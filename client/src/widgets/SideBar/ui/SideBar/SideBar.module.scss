@@ -1,0 +1,15 @@
+.SideBar {
+   height: calc(100vh - var(--navbar-height));
+   width: 300px;
+   padding: 30px 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   background-color: var(--bg-secondary-color);
+   transition: width ease-out 0.3s;
+}
+
+.collapsed.SideBar {
+   width: 65px;
+}

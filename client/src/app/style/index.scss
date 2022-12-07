@@ -1,8 +1,18 @@
 @import "resset";
-@import "variables/global";
-@import "themes/dark";
-@import "themes/normal";
+@import "./variables/global";
+@import "./themes/dark";
+@import "./themes/normal";
 
 .app {
-   background-color: var(--bg-color);
+   font: var(--font-m);
+   background-color: var(--bg-primary-color);
+}
+
+.app-container {
+   display: flex;
+}
+
+.page-wrapper {
+   display: flex;
+   flex-grow: 1;
 }

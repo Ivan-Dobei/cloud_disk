@@ -1,6 +1,7 @@
 import {AppRouter} from 'app/providers/AppRouter';
 import {useTheme} from 'app/providers/ThemeProvider';
 import {NavBar} from 'widgets/NavBar/ui/NavBar';
+import {SideBar} from 'widgets/SideBar';
 
 
 
@@ -10,7 +11,10 @@ const App = () => {
    return (
       <div className={`app ${theme}`}>
          <NavBar/>
-         <AppRouter/>
+         <div className="app-container">
+            <SideBar/>
+            <AppRouter/>
+         </div>
       </div>
    );
 };

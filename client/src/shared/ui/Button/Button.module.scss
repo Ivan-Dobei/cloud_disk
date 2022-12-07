@@ -8,6 +8,8 @@
 }
 
 .outline {
-   padding: 7px 15px;
-   border: 1px solid #000;
+   padding: 10px 15px;
+   border: 1px solid var(--bg-secondary-color);
+   background: none;
+   color: var(--primary-color);
 }
