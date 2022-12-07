@@ -12,7 +12,10 @@ export const NavBar = (props: NavBarProps) => {
    const {className} = props;
 
    return (
-      <div className={classNames(cls.navbar, {}, [className])}>
+      <div
+         data-testid={'navbar'}
+         className={classNames(cls.navbar, {}, [className])}
+      >
          <Link to={RoutePath.main} >Main Page</Link>
          <ThemeSwitcher/>
       </div>
