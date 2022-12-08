@@ -3,9 +3,8 @@ import {useTheme} from 'app/providers/ThemeProvider';
 import {NavBar} from 'widgets/NavBar/ui/NavBar';
 import {SideBar} from 'widgets/SideBar';
 
-
-
 const App = () => {
+
    const {theme, toggleTheme} = useTheme();
 
    return (
